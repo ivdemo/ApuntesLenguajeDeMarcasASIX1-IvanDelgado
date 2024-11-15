@@ -5,26 +5,26 @@
 1. Acceder a github.com.
 2. Registrarse/Iniciar sesion con tu cuenta.
 ## 1.2 - Creacion de repositorios
-1- Acceder a tu perfil
-2- Seleccionar la pestaña "Repositories"
-3- Hacer clic en "New" para crear el repositorio
-4- Rellenar la informacion sobre el repositorio
+1. Acceder a tu perfil
+2. Seleccionar la pestaña "Repositories"
+3. Hacer clic en "New" para crear el repositorio
+4. Rellenar la informacion sobre el repositorio
 ## 1.3 - Instalacion de git
-1- Buscar git en google
-2- Acceder al enlace de "Download for Windows"
-3- Seleccionar la version de instalador acorde a nuestro sistema operativo.
+1. Buscar git en google
+2. Acceder al enlace de "Download for Windows"
+3. Seleccionar la version de instalador acorde a nuestro sistema operativo.
 ### 1.3.1 - Diferentes comandos utiles para git
-1- "git init" --> Reiniciar el repositorio
-2- "git clone 'URL del repositorio'" --> Clonar el repositorio de github a local
-3- "git branch" --> Seleccionar raiz
-4- "git add" --> Preparar contenido para hacer comit
-5- "git commit -m 'Mensaje comit'" --> Hacer comit con mensaje
-6- "git push" --> Publicar commit en github
+1. "git init" --> Reiniciar el repositorio
+2. "git clone 'URL del repositorio'" --> Clonar el repositorio de github a local
+3. "git branch" --> Seleccionar raiz
+4. "git add" --> Preparar contenido para hacer comit
+5. "git commit -m 'Mensaje comit'" --> Hacer comit con mensaje
+6. "git push" --> Publicar commit en github
 ## 1.4 - Clonacion de repositorio
-1- Copiar la url del repositorio desde github
-2- Abrir un cmd desde la ubicacion donde queremos clonar el repositorio
-3- Utilizar el comando "git clone" seguido de la URL del repositorio
-4- Ahora ya podremos trabajar localmente en el repositorio
+1. Copiar la url del repositorio desde github
+2. Abrir un cmd desde la ubicacion donde queremos clonar el repositorio
+3. Utilizar el comando "git clone" seguido de la URL del repositorio
+4. Ahora ya podremos trabajar localmente en el repositorio
 # 2 - Markdown
 ## 2.1 - Encabezados
 El uso de encabezados es una forma de poder organizar y estructurar un documento.
