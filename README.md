@@ -2,8 +2,8 @@
 
 # 1 - Github
 ## 1.1 - Acceder a github
-1- Acceder a github.com
-2- Registrarse/Iniciar sesion con tu cuenta
+1- Acceder a github.com.
+2- Registrarse/Iniciar sesion con tu cuenta.
 ## 1.2 - Creacion de repositorios
 1- Acceder a tu perfil
 2- Seleccionar la pestaña "Repositories"
