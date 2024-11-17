@@ -82,3 +82,64 @@ Para crear tablas utilizaremos las pipes (|) para delimitar las columnas y pondr
     |Texto 1|Texto 2|Texto 3|
     |Primer ejemplo|Segundo ejemplo|Tercer ejemplo|
 ```
+# 3 - HTML
+## 3.1 - Introduccion a HTML
+HTML es el lenguaje mas importante de Internet dado que sin HTML no se veria nada en el navegador.
+HTML define la estructura y el contenido de las paginas web mediante etiquetas, es muy adaptable, tiene estructura logica y es facil de entender.
+### 3.1.1 - Elementos
+#### Etiqueta de apertura
+Consiste en el nombre del elemento cerrado por los simbolos de menor y mayor que (<>) al inicio y al final. Este nos indica donde comienza el elemento.
+```
+    <p>
+```
+#### Etiqueta de cierre
+Es igual que la etiqueta de apertura , excepto que se le añade una contra barra (/) antes del nombre de la etiqueta.
+```
+    </p>
+```
+#### Contenido
+Es la informacion que se encuentra entre las etiquetas de apertura y cierre.
+```
+    <p id="CONTENIDO">
+```
+#### Elemento
+El elemento es la suma del contenido mas las etiquetas de apertura y cierre, es el conjunto total.
+### 3.1.2 - Atributos
+Los atributos contienen informacion adicional del elemento.
+Los atributos se incluyen dentro de la etiqueta de aperturo (lo que significa que no sera visible para el usuario)
+## 3.2 - Estructura basica de HTML
+```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    
+    </body>
+    </html>
+```
+- ```<!DOCTYPE html>```: Indica el tipo de documento.
+- ```<html></html>```: Encierra todo el contenido de la pagina entera.
+- ```<head></head>```: Contenedor para el contenido que no queremos que se vea en la pagina.
+  - ```<meta></meta>```: Añade metainformacion a la pagina.
+  - Descripcion de la pagina
+  - Palabras clave
+  - ```<title></title>```: Establece el titulo de la pagina. Este es el que aparece en la pestaña del navegador.
+  - Icono
+  - Enlaces con otros ficheros
+  - Codigo CSS
+- ```<body></body>```: Contenedor para el contenido que queremos mostrar en la pagina.
+## 3.3 - Etiquetas basicas de HTML
+### 3.3.1 - Rutas
+#### Ruta absoluta
+Esta ruta especifica la ubicacion completa del archivo en la web, comenzando por el dominio.
+#### Ruta relativa
+Esta ruta especifica la ubicacion del archivo basandonos desde nuestra ubicacion actual.
+### 3.3.2 - Imagenes
+Para introducir imagenes en el codigo utilizaremos la etiqueta "<img src="ubicacion">" donde src (source) insertaremos la ubicacion de la imagen que queremos introducir.
+### 3.3.3 - Enlaces
+Para introducir enlaces utilizaremos la etiqueta "<a href=URL></a>" donde href sirve para insertar la direccion de la web a la que queremos enlazar.
+## 3.4 - Elementos semanticos en HTML 5
