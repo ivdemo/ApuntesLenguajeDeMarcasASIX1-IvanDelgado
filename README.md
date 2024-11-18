@@ -36,12 +36,12 @@ Para crear estos encabezados utilizaremos las almoadillas (#). Cuantas mas ponga
     ###### Encabezado nivel 6
 ```
 ## 2.2 - Negrita
-Para hacer un texto en negrita deberemos de escribir 2 asteriscos (*) o guiones bajos (_) tanto al incio com al final del texto para que funcione
+Para hacer un texto en **negrita** deberemos de escribir 2 asteriscos (*) o guiones bajos (_) tanto al incio com al final del texto para que funcione
 ```
         **Texto de prueba en negrita**
 ```
 ## 2.3 - Cursiva
-Para hacer un texto en cursiva deberes de escribir 1 asterisco (*) o guion bajo(_) tanto al inico como al final del texto
+Para hacer un texto en *cursiva* deberes de escribir 1 asterisco (*) o guion bajo(_) tanto al inico como al final del texto
 ```
     *Texto de prueba en cursiva*
 ```
@@ -58,7 +58,7 @@ En cambio, para crear una lista desordenada deberemos de escribir un guion (-) o
 - Segundo apartado
 * Tercer apartado
 ## 2.5 - Mostrar codigo en un repositorio
-Para mostrar un trozo de codigo deberemos de escribir 3 acentos abiertos (`) al inicio y al final del codigo
+Para mostrar un trozo de codigo deberemos de escribir 3 acentos abiertos ( ` ) al inicio y al final del codigo
 ```
     ```
     Texto de prueba para mostrar codigo
@@ -100,13 +100,16 @@ Es igual que la etiqueta de apertura , excepto que se le añade una contra barra
 #### Contenido
 Es la informacion que se encuentra entre las etiquetas de apertura y cierre.
 ```
-    <p id="CONTENIDO">
+    <p>**Este es el contenido del elemento**</p>
 ```
 #### Elemento
 El elemento es la suma del contenido mas las etiquetas de apertura y cierre, es el conjunto total.
 ### 3.1.2 - Atributos
 Los atributos contienen informacion adicional del elemento.
 Los atributos se incluyen dentro de la etiqueta de aperturo (lo que significa que no sera visible para el usuario)
+```
+    <p id="ATRIBUTO">
+```
 ## 3.2 - Estructura basica de HTML
 ```
     <!DOCTYPE html>
@@ -139,9 +142,9 @@ Esta ruta especifica la ubicacion completa del archivo en la web, comenzando por
 #### Ruta relativa
 Esta ruta especifica la ubicacion del archivo basandonos desde nuestra ubicacion actual.
 ### 3.3.2 - Imagenes
-Para introducir imagenes en el codigo utilizaremos la etiqueta "<img src="ubicacion">" donde src (source) insertaremos la ubicacion de la imagen que queremos introducir.
+Para introducir imagenes en el codigo utilizaremos la etiqueta ```<img src="ubicacion">``` donde src (source) insertaremos la ubicacion de la imagen que queremos introducir.
 ### 3.3.3 - Enlaces
-Para introducir enlaces utilizaremos la etiqueta "<a href=URL></a>" donde href sirve para insertar la direccion de la web a la que queremos enlazar.
+Para introducir enlaces utilizaremos la etiqueta ```<a href=URL></a>``` donde href sirve para insertar la direccion de la web a la que queremos enlazar.
 ## 3.4 - Formularios
 ### 3.4.1 - Etiquetas de Formularios
 #### Form
