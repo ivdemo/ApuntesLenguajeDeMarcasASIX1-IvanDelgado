@@ -142,4 +142,46 @@ Esta ruta especifica la ubicacion del archivo basandonos desde nuestra ubicacion
 Para introducir imagenes en el codigo utilizaremos la etiqueta "<img src="ubicacion">" donde src (source) insertaremos la ubicacion de la imagen que queremos introducir.
 ### 3.3.3 - Enlaces
 Para introducir enlaces utilizaremos la etiqueta "<a href=URL></a>" donde href sirve para insertar la direccion de la web a la que queremos enlazar.
-## 3.4 - Elementos semanticos en HTML 5
+## 3.4 - Formularios
+### 3.4.1 - Etiquetas de Formularios
+#### Form
+Se utiliza para crear formularios y asi permitir que el usuario envie datos.
+- Atributos:
+  - action: URL donde se enviaran los datos del formulario.
+  - method: metodo de envio de datos.
+  - enctype: Metodo de codificacion de datos antes de enviar.
+  - target: Indica donde se debe de mostrar la informacion del formulario.
+#### Input
+Se utiliza para crear campos interactivos dentro del formulario.
+- Atributos:
+  - type: Tipo de entrada que se debe mostrar.
+    - radio: Boton de opcion, se agrupa con otros de mismo nombre.
+    - checkbox: Casilla de verificacion, permite seleccionar varias.
+  - id: Identificador unico para el campo.
+  - name: Nombre del campo.
+  - value: Valor predeterminado del campo.
+  - placeholder: Texto que aparece en el campo cuando esta vacio.
+  - required: Indica que el campo debe de ser rellenado antes de enviar el formulario.
+  - disabled: Desactiva el campo.
+  - readonly: Solo permite leer el campo.
+#### Textarea
+Sirve para crear un area de texto donde los usuarios pueden escribir texto.
+- Atributos:
+  - name: Nombre de control que se usara al enviar el formulario.
+  - id: Identificador del elemento.
+  - rows: Numero de lineas visibles en el area de texto.
+  - cols: Numero de caracteres visibles en una linea.
+  - placeholder: Texto que aparece en el area cuano esta vacia.
+  - required: Se debe de completar el campo antes de enviar.
+  - readonly: El campo solo permite leer.
+  - disabled: Desactiva el campo.
+#### Select
+Sirve para describir el contenido de un menu desplegable.
+#### Option
+Sirve para describir las opciones del menu.
+#### Fieldset
+Sirve para agrupar elementos que tengan algo en comun dentro de un formulario.
+#### Legend
+Nos da un titulo para el grupo
+#### Button
+Sirve para crear botones interactivos en el formulario.
