@@ -188,3 +188,102 @@ Sirve para agrupar elementos que tengan algo en comun dentro de un formulario.
 Nos da un titulo para el grupo
 #### Button
 Sirve para crear botones interactivos en el formulario.
+# 4 - CSS
+## 4.1 - Introducción a CSS
+CSS (Cascading Style Sheets - Hojas de Estilo en Cascada) es un lenguaje utilizado para definir el estilo de los documentos HTML. Permite modificar la apariencia visual (colores, fuentes, márgenes, etc.) de los elementos de una página web.
+## 4.2 - Tipos de CSS
+### CSS en línea (inline) 
+Dentro del propio elemento HTML.  
+  ```html
+  <h1 style="color: red;">Hola</h1>
+  ```
+### CSS interno
+Dentro de la etiqueta `<style>` en el `<head>` del documento HTML.  
+  ```html
+  <style>
+    h1 {
+      color: red;
+    }
+  </style>
+  ```
+### CSS externo
+En un archivo separado con extensión `.css` enlazado mediante la etiqueta `<link>`.  
+  ```html
+  <link rel="stylesheet" href="estilo.css">
+  ```
+## 4.3 - Selectores en CSS
+### Selector universal  
+  ```css
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  ```
+### Selector de etiqueta  
+  ```css
+  h1 {
+    color: blue;
+  }
+  ```
+### Selector de clase  
+  ```css
+  .miClase {
+    font-size: 18px;
+  }
+  ```
+### Selector de id  
+  ```css
+  #miId {
+    text-align: center;
+  }
+  ```
+### Selector descendente  
+  ```css
+  div h1 {
+    color: green;
+  }
+  ```
+
+## 4.4 - Propiedades comunes de CSS
+### Color y fondo  
+  ```css
+  color: red;
+  background-color: yellow;
+  ```
+### Texto  
+  ```css
+  font-size: 16px;
+  font-family: Arial;
+  text-align: center;
+  font-weight: bold;
+  ```
+### Caja y espaciado  
+  ```css
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  ```
+### Display y posición  
+  ```css
+  display: flex;
+  position: relative;
+  ```
+
+## 4.5 - Modelo de Caja (Box Model)
+El modelo de caja en CSS representa cómo se genera el espacio de los elementos en la página. Se compone de:  
+### Contenido (Content)
+Lo que contiene el texto o imagen.  
+### Relleno (Padding)
+Espacio interno entre el contenido y el borde.  
+### Borde (Border)
+El borde que rodea el padding y el contenido.  
+### Margen (Margin)
+Espacio externo entre el borde del elemento y otros elementos.  
+
+## 4.6 - Jerarquía HTML para aplicar estilos
+Ejemplo básico:  
+```html
+<div> <!-- Padre -->
+  <h1>Hola</h1> <!-- Hijo -->
+</div>
+```
