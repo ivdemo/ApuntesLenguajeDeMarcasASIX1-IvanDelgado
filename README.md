@@ -287,3 +287,115 @@ Ejemplo básico:
   <h1>Hola</h1> <!-- Hijo -->
 </div>
 ```
+
+
+# 5 - Diseño Responsive
+
+## 5.1 - ¿Qué es el diseño web responsive?
+
+El diseño web responsive o adaptativo es una técnica que busca la correcta visualización de una misma página en distintos dispositivos, desde ordenadores hasta tablets y móviles.
+
+## 5.2 - Media Queries
+
+Media Query es una técnica de CSS3 que usa la regla `@media` para aplicar estilos solo si se cumple una condición.
+
+```css
+@media only screen and (max-width: 600px) {
+   body {
+      background-color: lightblue;
+   }
+}
+```
+
+Permiten que ciertas partes del diseño cambien completamente dependiendo del tamaño de la pantalla.
+
+## 5.3 - Ejemplo con columnas
+
+```css
+/* Diseño de columnas */
+.column-1 { width: 100%; float: left; }
+.column-2 { width: 50%; float: left; }
+.column-3 { width: 33.33%; float: left; }
+.column-4 { width: 25%; float: left; }
+.column-5 { width: 20%; float: left; }
+.column-6 { width: 16.66%; float: left; }
+.column-75 { width: 75%; float: left; }
+
+@media only screen and (max-width: 600px) {
+    .column-2 { width: 100%; }
+    .column-3 { width: 100%; }
+    .column-4 { width: 50%; }
+}
+```
+
+## 5.4 - Orientación del dispositivo
+
+```css
+@media (orientation: landscape) {
+  /* Estilos CSS */
+}
+```
+
+##  5.5 - Condiciones múltiples
+
+```css
+@media only screen and (min-width:320px) and (max-width:480px) {
+    /* Estilos CSS */
+}
+```
+
+## 5.6 - Parámetros comunes en Media Queries
+
+- `width`: anchura del navegador
+- `height`: altura del navegador
+- `device-width`: anchura del dispositivo
+- `device-height`: altura del dispositivo
+- `orientation`: `portrait` o `landscape`
+- `resolution`: densidad de píxeles
+
+Los prefijos `min-` y `max-` permiten establecer límites superior e inferior.
+
+## 5.7 - Diseño Mobile First
+
+Primero se define el estilo para móviles, y luego se sobrescriben para escritorio:
+
+```css
+/* Para móviles */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
+}
+```
+
+## 5.8 - Metaetiqueta Viewport
+
+Esta etiqueta se inserta en el `<head>` del HTML y define cómo se adapta la página a la pantalla:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+### 5.8.1 - Atributos de la metaetiqueta Viewport
+
+| Atributo          | Valores posibles                | Descripción |
+|-------------------|----------------------------------|-------------|
+| `width`           | Pixels o `device-width`         | Ancho de la página |
+| `height`          | Pixels o `device-height`        | Alto de la página |
+| `initial-scale`   | Número real ≥ 0.1               | Zoom inicial |
+| `user-scale`      | `yes` / `no`                    | Permitir zoom al usuario |
+| `minimum-scale`   | Número real ≥ 0.1               | Zoom mínimo permitido |
+| `maximum-scale`   | Número real ≥ 0.1               | Zoom máximo permitido |
